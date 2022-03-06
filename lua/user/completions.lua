@@ -102,7 +102,7 @@ cmp.setup {
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
         luasnip = "[Snippet]",
-        buffer = "[File]",
+        buffer = "[Buffer]",
         path = "[Path]",
       })[entry.source.name]
       return vim_item
@@ -110,6 +110,7 @@ cmp.setup {
   },
   -- sources determine the order of suggestions in menu
   sources = {
+    { name = "nvim_lsp" },
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },

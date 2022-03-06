@@ -13,7 +13,7 @@ km('n', '<C-h>', '<C-w>h', opts)
 km('n', '<C-j>', '<C-w>j', opts)
 km('n', '<C-k>', '<C-w>k', opts)
 km('n', '<C-l>', '<C-w>l', opts)
-km('n', '<leader>', ':Lex 30<cr>', opts)
+km('n', '<leader>e', ':Lex 30<cr>', opts)
 
 -- -- Window Resize
 km('n', '<C-Up>', ':resize +2<cr>', opts)

@@ -56,11 +56,12 @@ return packer.startup(function(use)
 
   -- -- Completion Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "rafamadriz/friendly-snippets" -- vscode like snippets
 
   -- LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer" -- simplify language installation
+  use "saadparwaiz1/cmp_luasnip"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
