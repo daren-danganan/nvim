@@ -37,6 +37,6 @@ o.smartcase = true
 -- Utility Settings
 o.mouse = 'a'
 o.clipboard = 'unnamedplus'
-o.completeopt = 'menuone,noselect'
+o.completeopt = 'menu,menuone,noselect'
 o.fileencoding = 'utf-8'
 o.undofile = true

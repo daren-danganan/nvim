@@ -127,3 +127,16 @@ cmp.setup {
     native_menu = false,
   },
 }
+
+-- Command line completions
+require'cmp'.setup.cmdline(':', {
+  sources = {
+    { name = 'cmdline' }
+  }
+})
+
+require'cmp'.setup.cmdline('/', {
+  sources = {
+    { name = 'buffer' }
+  }
+})
