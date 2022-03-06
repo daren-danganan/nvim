@@ -43,9 +43,6 @@ return packer.startup(function(use)
                                 in Neovim --]]
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
-  -- LSP
-  use "neovim/nvim-lspconfig"
-
   -- Colorschemes
   use "Mofiqul/vscode.nvim" -- VSCode Colorscheme
 
@@ -54,10 +51,16 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "hrsh7th/cmp-nvim-lsp" -- neovim native lsp completions
+  use "hrsh7th/cmp-nvim-lua" -- neovim lua completions
 
   -- -- Completion Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+  -- LSP
+  use "neovim/nvim-lspconfig"
+  use "williamboman/nvim-lsp-installer" -- simplify language installation
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
