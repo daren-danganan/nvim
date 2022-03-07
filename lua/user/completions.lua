@@ -129,13 +129,13 @@ cmp.setup {
 }
 
 -- Command line completions
-require'cmp'.setup.cmdline(':', {
+cmp.setup.cmdline(':', {
   sources = {
     { name = 'cmdline' }
   }
 })
 
-require'cmp'.setup.cmdline('/', {
+cmp.setup.cmdline('/', {
   sources = {
     { name = 'buffer' }
   }
