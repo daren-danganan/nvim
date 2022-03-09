@@ -6,3 +6,4 @@ require('user.completions')     --lua/user/completions.lua
 require('user.lsp')
 require('user.telescope')       --lua/user/telescope.lua
 require('user.treesitter')      --lua/user/treesitter.lua
+require('user.utilities')       --lua/user/utilities.lua
