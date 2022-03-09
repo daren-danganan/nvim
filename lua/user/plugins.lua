@@ -1,7 +1,7 @@
 local fn = vim.fn
 
 -- Automatically install packer
-local install_path = fn.stdpath('data') .. 
+local install_path = fn.stdpath('data') ..
     '/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
     PACKER_BOOTSTRAP = fn.system({'git', 'clone', '--depth', '1',
@@ -40,7 +40,7 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- Have packer manage itself
 
   -- Plugin Dependencies
-  use "nvim-lua/popup.nvim" --[[ An implementation of the Popup API from vim 
+  use "nvim-lua/popup.nvim" --[[ An implementation of the Popup API from vim
                                 in Neovim --]]
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
@@ -65,7 +65,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
 
   -- Telescope
-  use { 
+  use {
       "nvim-telescope/telescope.nvim",
       requires = {{ "nvim-lua/plenary.nvim" }}
   }

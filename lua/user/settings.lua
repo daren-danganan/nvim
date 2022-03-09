@@ -18,10 +18,10 @@ o.scrolloff = 8
 o.sidescrolloff = 8
 
 -- UI - Indents
-o.tabstop = 4
-o.softtabstop = 4
+o.tabstop = 2
+o.softtabstop = 2
 o.expandtab = true
-o.shiftwidth = 4
+o.shiftwidth = 2
 o.smartindent = true
 
 -- UI - Windows
@@ -39,3 +39,5 @@ o.clipboard = 'unnamedplus'
 o.completeopt = 'menu,menuone,noselect'
 o.fileencoding = 'utf-8'
 o.undofile = true
+wo.foldmethod = 'expr'
+wo.foldexpr = 'nvim_treesitter#foldexpr()'
