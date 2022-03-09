@@ -13,3 +13,8 @@ if autopairs_status_ok then
     cmp_aupairs.lisp[#cmp_aupairs.lisp+1] = "racket"
 end
 
+local comments_status_ok, comments = pcall(require, "Comment")
+if comments_status_ok then
+  comments.setup()
+end
+
