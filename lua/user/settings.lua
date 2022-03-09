@@ -5,7 +5,6 @@ local bo = vim.bo
 
 -- UI Settings
 o.number = true
-o.relativenumber = true
 o.wildmode = 'list,longest'
 o.colorcolumn = '80'
 o.cursorline = true
