@@ -76,9 +76,16 @@ return packer.startup(function(use)
       run = ':TSUpdate'
   }
 
+  -- Git
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {{'nvim-lua/plenary.nvim'}},
+    -- tag = 'release' -- To use the latest release
+  }
+
   -- Quality of Life Plugins
-  use "windwp/nvim-autopairs"
-  use "numToStr/Comment.nvim"
+  use "windwp/nvim-autopairs" -- settings on ./utilities.lua
+  use "numToStr/Comment.nvim" -- settings on ./utilities.lua
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
