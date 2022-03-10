@@ -39,5 +39,4 @@ o.clipboard = 'unnamedplus'
 o.completeopt = 'menu,menuone,noselect'
 o.fileencoding = 'utf-8'
 o.undofile = true
-wo.foldmethod = 'expr'
-wo.foldexpr = 'nvim_treesitter#foldexpr()'
+wo.foldmethod = 'syntax'
