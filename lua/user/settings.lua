@@ -39,4 +39,4 @@ o.clipboard = 'unnamedplus'
 o.completeopt = 'menu,menuone,noselect'
 o.fileencoding = 'utf-8'
 o.undofile = true
-wo.foldmethod = 'syntax'
+wo.foldmethod = 'indent'
