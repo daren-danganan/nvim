@@ -42,6 +42,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" --[[ An implementation of the Popup API from vim
                                 in Neovim --]]
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
+  use 'kyazdani42/nvim-web-devicons' -- Web dev icons
 
   -- Colorschemes
   use "Mofiqul/vscode.nvim" -- VSCode Colorscheme
@@ -76,12 +77,17 @@ return packer.startup(function(use)
   }
 
   -- Nvim-Tree
-  use 'kyazdani42/nvim-web-devicons'
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     },
+  }
+
+  -- Bufferline
+  use {
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons'
   }
 
   -- Git

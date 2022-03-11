@@ -8,4 +8,5 @@ require('user.treesitter')      --lua/user/treesitter.lua
 require('user.git')             --lua/user/git.lua
 require('user.utilities')       --lua/user/utilities.lua
 require('user.explorer')        --lua/user/explorer.lua
+require('user.buffers')         --lua/user/buffers.lua
 require('user.settings')    	  --lua/user/settings.lua
