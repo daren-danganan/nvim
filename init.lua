@@ -10,4 +10,5 @@ require('user.utilities')       --lua/user/utilities.lua
 require('user.explorer')        --lua/user/explorer.lua
 require('user.buffers')         --lua/user/buffers.lua
 require('user.lualine')         --lua/user/lualine.lua
+require('user.toggleterm')      --lua/user/toggleterm.lua
 require('user.settings')    	  --lua/user/settings.lua

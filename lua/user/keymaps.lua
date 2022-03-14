@@ -38,6 +38,7 @@ km("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 km("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 km("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 km("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+km("", "<leader>t", ":ToggleTerm<CR>", opts)
 
 -- Telescope
 km("n", "<leader>f", "<cmd>lua require'telescope.builtin'"

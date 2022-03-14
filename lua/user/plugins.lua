@@ -98,6 +98,9 @@ return packer.startup(function(use)
     requires = 'kyazdani42/nvim-web-devicons'
   }
 
+  -- ToggleTerm
+  use "akinsho/toggleterm.nvim"
+
   -- Git
   use {
     'lewis6991/gitsigns.nvim',
