@@ -102,6 +102,9 @@ return packer.startup(function(use)
   -- ToggleTerm
   use "akinsho/toggleterm.nvim"
 
+  -- Alpha
+  use "goolord/alpha-nvim"
+
   -- Git
   use {
     'lewis6991/gitsigns.nvim',
