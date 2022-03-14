@@ -112,6 +112,7 @@ return packer.startup(function(use)
   -- Quality of Life Plugins
   use "windwp/nvim-autopairs" -- settings on ./utilities.lua
   use "numToStr/Comment.nvim" -- settings on ./utilities.lua
+  use "lewis6991/impatient.nvim" -- use caching to improve performance
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
