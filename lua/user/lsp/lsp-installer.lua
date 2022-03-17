@@ -28,11 +28,6 @@ lsp_installer.on_server_ready(function(server)
     opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
   end
 
-  if server.name == "jsonls" then
-    local jsonls_opts = require("user.lsp.settings.jsonls")
-    opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
-  end
-
   if server.name == "yamlls" then
     local yamlls_opts = require("user.lsp.settings.yamlls")
     opts = vim.tbl_deep_extend("force", yamlls_opts, opts)
