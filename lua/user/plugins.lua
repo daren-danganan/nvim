@@ -36,35 +36,22 @@ packer.init({
 -- -- Install LSP using :LspInstall
 return packer.startup(function(use)
   -- Plugin Installer
-  use 'wbthomason/packer.nvim' -- Have packer manage itself
+    use 'wbthomason/packer.nvim' -- Have packer manage itself
 
   -- Plugin Dependencies
-  use "nvim-lua/popup.nvim" --[[ An implementation of the Popup API from vim
-                                in Neovim --]]
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
-  use 'kyazdani42/nvim-web-devicons' -- Web dev icons
+    use "nvim-lua/popup.nvim" --[[ An implementation of the Popup API from vim
+                                  in Neovim --]]
+    use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
+    use 'kyazdani42/nvim-web-devicons' -- Web dev icons
 
   -- Colorschemes
-  use "Mofiqul/vscode.nvim" -- VSCode Colorscheme
-
-  -- Completions
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "hrsh7th/cmp-nvim-lsp" -- neovim native lsp completions
-  use "hrsh7th/cmp-nvim-lua" -- neovim lua completions
-
-  -- -- Completion Snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- vscode like snippets
+    use "Mofiqul/vscode.nvim" -- VSCode Colorscheme
 
   -- LSP
-  use "neovim/nvim-lspconfig"
-  use "williamboman/nvim-lsp-installer" -- simplify language installation
-  use "tamago324/nlsp-settings.nvim"
-  use "saadparwaiz1/cmp_luasnip"
-  use "b0o/schemastore.nvim" -- lookup for reference
+  use {
+    "neoclide/coc.nvim",
+    branch = "release"
+  }
 
   -- Telescope
   use {
