@@ -5,15 +5,12 @@ end
 
 local handlers = require("user.lsp.handlers")
 local servers = {
-  'angularls',
   'cssls',
   'eslint',
   'html',
   'jdtls',
   'jsonls',
   'sqlls',
-  'sumneko_lua',
-  'yamlls',
 }
 
 for _, lsp in pairs(servers) do
