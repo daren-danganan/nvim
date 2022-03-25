@@ -11,6 +11,7 @@ local servers = {
   'jdtls',
   'jsonls',
   'sqlls',
+  'angularls'
 }
 
 for _, lsp in pairs(servers) do

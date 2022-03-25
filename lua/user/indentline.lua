@@ -16,5 +16,4 @@ vim.g.indent_blankline_filetype_exclude = {
 
 indent.setup({
   show_current_context = true,
-  show_current_context_start = true,
 })

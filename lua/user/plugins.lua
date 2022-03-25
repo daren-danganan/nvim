@@ -109,7 +109,6 @@ return packer.startup(function(use)
   use {
     'lewis6991/gitsigns.nvim',
     requires = {{'nvim-lua/plenary.nvim'}},
-    -- tag = 'release' -- To use the latest release
   }
 
   -- Quality of Life Plugins

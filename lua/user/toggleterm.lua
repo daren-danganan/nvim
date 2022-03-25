@@ -3,4 +3,6 @@ if not toggleterm_status_ok then
   return
 end
 
-toggleterm.setup()
+toggleterm.setup({
+  direction = 'float'
+})
