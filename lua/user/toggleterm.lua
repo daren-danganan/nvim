@@ -4,5 +4,4 @@ if not toggleterm_status_ok then
 end
 
 toggleterm.setup({
-  direction = 'float'
 })

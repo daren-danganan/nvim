@@ -7,6 +7,7 @@ local handlers = require("user.lsp.handlers")
 local servers = {
   'cssls',
   'eslint',
+  'tsserver',
   'html',
   'jdtls',
   'jsonls',
