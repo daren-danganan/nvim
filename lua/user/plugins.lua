@@ -116,6 +116,7 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- settings on ./utilities.lua
   use "lewis6991/impatient.nvim" -- use caching to improve performance
   use "lukas-reineke/indent-blankline.nvim" -- show indent line
+  use "folke/which-key.nvim" -- popup list of keybinds
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

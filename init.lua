@@ -1,6 +1,6 @@
 require('user.impatient')       --lua/user/impatient.lua
 require('user.alpha')           --lua/user/alpha.lua
-require('user.keymaps')         --lua/user/keymaps.lua
+require('user.keymaps')         --lua/user/keymaps
 require('user.plugins')         --lua/user/plugins.lua
 require('user.colorschemes')    --lua/user/colorschemes.lua
 require('user.completions')     --lua/user/completions.lua
@@ -9,7 +9,7 @@ require('user.telescope')       --lua/user/telescope.lua
 require('user.treesitter')      --lua/user/treesitter.lua
 require('user.git')             --lua/user/git.lua
 require('user.utilities')       --lua/user/utilities.lua
-require('user.explorer')        --lua/user/explorer.lua
+require('user.nvimtree')        --lua/user/nvimtree.lua
 require('user.buffers')         --lua/user/buffers.lua
 require('user.lualine')         --lua/user/lualine.lua
 require('user.toggleterm')      --lua/user/toggleterm.lua
