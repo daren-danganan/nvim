@@ -26,7 +26,7 @@ km('n', '<S-l>', ':bnext<CR>', opts)
 km('n', '<S-h>', ':bprevious<CR>', opts)
 
 -- Insert Mode
-km('i', 'jk', '<ESC>', opts)
+km('i', 'jj', '<ESC>', opts)
 
 -- Visual Mode
 -- -- Stay in V on indent
