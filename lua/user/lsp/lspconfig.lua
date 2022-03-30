@@ -10,9 +10,11 @@ local servers = {
   'tsserver',
   'html',
   'jdtls',
-  'jsonls',
   'sqlls',
-  'angularls'
+  'angularls',
+  'sumneko_lua',
+  'yamlls',
+  'jsonls',
 }
 
 for _, lsp in pairs(servers) do
