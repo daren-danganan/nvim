@@ -62,7 +62,6 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer" -- simplify language installation
-  use "tamago324/nlsp-settings.nvim"
   use "saadparwaiz1/cmp_luasnip"
   use "b0o/schemastore.nvim" -- lookup for reference
 
