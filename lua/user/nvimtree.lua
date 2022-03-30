@@ -1,10 +1,10 @@
-local explorer_status_ok, explorer = pcall(require, "nvim-tree")
-if not explorer_status_ok then
+local nvimtree_status_ok, nvimtree = pcall(require, "nvim-tree")
+if not nvimtree_status_ok then
   return
 end
 -- following options are the default
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
-explorer.setup {
+nvimtree.setup {
   disable_netrw        = false,
   hijack_netrw         = true,
   open_on_setup        = false,
