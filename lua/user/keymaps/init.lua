@@ -41,8 +41,6 @@ km("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 km("", "<leader>t", ":ToggleTerm<CR>", opts)
 
 -- Telescope
-km("n", "<leader>f", "<cmd>lua require'telescope.builtin'"
-  .. ".find_files()<cr>", opts)
 km("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 km("", "<leader>p", "<cmd>Telescope projects<cr>", opts)
 

@@ -2,6 +2,7 @@ require('user.impatient')       --lua/user/impatient.lua
 require('user.alpha')           --lua/user/alpha.lua
 require('user.keymaps')         --lua/user/keymaps
 require('user.plugins')         --lua/user/plugins.lua
+require('user.keymaps.whichkey')  --lua/user/keymaps/whichkey.lua
 require('user.colorschemes')    --lua/user/colorschemes.lua
 require('user.completions')     --lua/user/completions.lua
 require('user.lsp')             --lua/user/lsp
