@@ -7,11 +7,14 @@ local mappings = {
   f = {
     name = "File",
     f = { "<cmd>Telescope find_files<cr>", "Find File" },
-    g = { "<cmd>Telescope live_grep<cr>", "Find Text" },
+    t = { "<cmd>Telescope live_grep<cr>", "Find Text" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
     n = { "<cmd>enew<cr>", "New File" },
-    c = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Change File Name"}
+    c = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Change File Name"},
+    w = { "<cmd>w<cr>", "Save File" },
+    q = { "<cmd>q<cr>", "Quit File" }
   },
+  -- Language mappings
   l = {
     name = "Language",
     d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Definition" },
@@ -23,7 +26,21 @@ local mappings = {
     f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
     t = { "<cmd>lua vim.lsp.buf.type_definition()<cr>", "Type Definition" },
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-  }
+  },
+  -- Window mappings
+  w = {
+    name = "Window",
+    v = { "<cmd>vsplit<cr>", "Vertical Split" },
+    s = { "<cmd>split<cr>", "Horizontal Split" },
+    h = { "<c-w>h", "Go to left window" },
+    j = { "<c-w>j", "Go to below window" },
+    k = { "<c-w>k", "Go to above window" },
+    l = { "<c-w>l", "Go to right window" },
+  },
+  -- Standalone mappings
+  s = { "<cmd>w<cr>", "Save" },
+  q = { "<cmd>q<cr>", "Quit" },
+  x = { "<cmd>qall<cr>", "Quit Session" },
 }
 
 local opts = {
