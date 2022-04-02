@@ -12,7 +12,7 @@ local mappings = {
     n = { "<cmd>enew<cr>", "New File" },
     c = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Change File Name"},
     w = { "<cmd>w<cr>", "Save File" },
-    q = { "<cmd>q<cr>", "Quit File" }
+    q = { "<cmd>bd<cr>", "Quit File" }
   },
   -- Language mappings
   l = {
@@ -37,10 +37,6 @@ local mappings = {
     k = { "<c-w>k", "Go to above window" },
     l = { "<c-w>l", "Go to right window" },
   },
-  -- Standalone mappings
-  s = { "<cmd>w<cr>", "Save" },
-  q = { "<cmd>q<cr>", "Quit" },
-  x = { "<cmd>qall<cr>", "Quit Session" },
 }
 
 local opts = {
