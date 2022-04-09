@@ -47,4 +47,4 @@ km("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 km("", "<leader>p", "<cmd>Telescope projects<cr>", opts)
 
 -- NvimTree
-vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeFindFileToggle<CR>', opts)

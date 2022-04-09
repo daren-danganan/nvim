@@ -65,10 +65,16 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
   use "b0o/schemastore.nvim" -- lookup for reference
 
+  -- DAP
+  use {
+    "rcarriga/nvim-dap-ui",
+    requires = { "mfussenegger/nvim-dap" }
+  }
+
   -- Telescope
   use {
       "nvim-telescope/telescope.nvim",
-      requires = {{ "nvim-lua/plenary.nvim" }}
+      requires = { "nvim-lua/plenary.nvim" }
   }
   use "ahmedkhalf/project.nvim"
 
